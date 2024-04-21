@@ -44,7 +44,7 @@ export default function Footer() {
                 &copy;{year} CryptoApp - All Rights Reserved
             </p>
             <div className="flex justify-center">
-                <a href="https://vempr.github.io/crypto-app/#/">
+                <a href="https://github.com/vempr/crypto-app">
                     <img
                         src={ghLogo}
                         alt="GitHub Repository"
