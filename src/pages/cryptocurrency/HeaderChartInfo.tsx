@@ -16,7 +16,7 @@ export default function HeaderChartInfo({ data }: Response) {
     const price = useFormatNumber(Number(data.data.coin.price), true);
 
     return (
-        <div className="transition-opacity">
+        <div className="animate-fade">
             <Header title={`${name} (${abb}) Price`} />
             <p className="md:ml-8 -translate-y-6 text-gray-600 text-center md:text-left mx-2 md:m-0">
                 {name} Live Price in US Dollar (USD). View value statistics,
