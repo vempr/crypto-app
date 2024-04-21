@@ -8,7 +8,7 @@ import {
 } from "../type.ts";
 
 const coinrankingApiHeaders = {
-    "X-RapidAPI-Key": import.meta.env.VITE_RAPIDAPI_API_KEY,
+    "X-RapidAPI-Key": "8b047c8f90msha23e816c5aad70fp150c22jsn5fb298b9ff29",
     "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
 };
 
