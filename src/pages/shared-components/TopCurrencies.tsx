@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useGetCoinsQuery } from "../../api/crApi.ts";
 import { setCoinsOverview } from "../../app/appSlice.ts";
+import { useScrollTop } from "../../hooks/useScrollTop.ts";
 
 import Loading from "../../components/Loading.tsx";
 import CoinCard from "../../components/CoinCard.tsx";
@@ -11,6 +12,7 @@ import { AppDispatch, RootState } from "../../app/store.ts";
 import { Coin, Page } from "../../type.ts";
 
 export default function TopCurrencies({ page }: Page) {
+    const scrollTop = useScrollTop();
     const dispatch = useDispatch<AppDispatch>();
     const coinsOverview = useSelector(
         (state: RootState) => state.app.coins.coinsOverview,
@@ -46,7 +48,10 @@ export default function TopCurrencies({ page }: Page) {
     return (
         <div className="flex flex-col items-center md:flex-row md:items-start flex-wrap md:ml-6 gap-7 mb-10 animate-fade">
             {finalCoins.map((coin: Coin) => (
-                <div key={coin.name}>
+                <div
+                    key={coin.name}
+                    onClick={scrollTop}
+                >
                     <CoinCard coin={coin} />
                 </div>
             ))}
