@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import PageHome from "./pages/home/PageHome.tsx";
 import PageNotFound from "./pages/notfound/PageNotFound.tsx";
 import PageCurrencies from "./pages/cryptocurrencies/PageCurrencies.tsx";
@@ -13,26 +13,26 @@ import { Provider } from "react-redux";
 import store from "./app/store.ts";
 import "./index.css";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
-        path: "/crypto-app/",
+        path: "/",
         element: <PageHome />,
         errorElement: <PageNotFound />,
     },
     {
-        path: "/crypto-app/cryptocurrencies",
+        path: "/cryptocurrencies",
         element: <PageCurrencies />,
     },
     {
-        path: "/crypto-app/cryptocurrency/:coinUuid",
+        path: "/cryptocurrency/:coinUuid",
         element: <PageCoin />,
     },
     {
-        path: "/crypto-app/exchanges",
+        path: "/exchanges",
         element: <PageExchanges />,
     },
     {
-        path: "/crypto-app/news",
+        path: "/news",
         element: <PageNews />,
     },
 ]);
