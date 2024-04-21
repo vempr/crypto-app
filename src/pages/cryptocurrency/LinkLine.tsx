@@ -14,6 +14,7 @@ export default function LinkLine({ link }: LinkProps) {
             <p className="font-semibold">{type}</p>
             <a
                 href={link.url}
+                target="_blank"
                 className="text-sky-600 font-light"
             >
                 {link.name}
