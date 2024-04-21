@@ -31,6 +31,7 @@ export default function LatestNews({ page }: Page) {
 
     if (error) {
         console.log(error);
+        console.log(data);
         return <ErrorPage err={error} />;
     }
 
