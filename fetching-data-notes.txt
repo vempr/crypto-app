@@ -1,0 +1,21 @@
+User first time, fetch data from:
+
+- hp global crypto stats
+- hp top 10 cc
+- hp latest news section
+- exch top 100
+- news 100
+- ccs top 100
+
+- cc coin-data: stats (name, %, etc.), graph, info/links (only when user is on coin page)
+
+
+Local storage:
+- keep 15 minute tracker in local storage to prevent api overload
+    -> for each api
+- track in redux state, check difference time when api fetch
+
+
+Loading screen:
+- loading icon
+- welcome to cryptosite, the website will load shortly!
