@@ -14,7 +14,7 @@ const createRequest = (url: string, userSearch?: string) => ({
     headers: ddgApiHeaders,
     params: {
         term: "crypto " + userSearch,
-        safeSearch: "moderate",
+        safeSearch: "strict",
         time: "w",
         region: "wt-wt",
         offset: "50",
