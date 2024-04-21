@@ -15,24 +15,24 @@ import "./index.css";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/crypto-app/",
         element: <PageHome />,
         errorElement: <PageNotFound />,
     },
     {
-        path: "/cryptocurrencies",
+        path: "/crypto-app/cryptocurrencies",
         element: <PageCurrencies />,
     },
     {
-        path: "/cryptocurrency/:coinUuid",
+        path: "/crypto-app/cryptocurrency/:coinUuid",
         element: <PageCoin />,
     },
     {
-        path: "/exchanges",
+        path: "/crypto-app/exchanges",
         element: <PageExchanges />,
     },
     {
-        path: "/news",
+        path: "/crypto-app/news",
         element: <PageNews />,
     },
 ]);
