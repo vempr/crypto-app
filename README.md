@@ -10,7 +10,8 @@ Simply navigate to the provided link to start the app.
 
 - **Development**: React.js, TypeScript, Vite
 - **Routing**: React Router DOM
-- **State Management**: RTK Query, Redux Toolkit
+- **State Management**: Redux Toolkit
+-  **Data Fetching**: RTK Query
 - **UI**: Tailwind CSS, Chart.js, FontAwesome Icons
 
 ## APIs
