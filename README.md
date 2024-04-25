@@ -4,7 +4,7 @@
 I've incorporated advanced features to provide more information and a better user experience.
 <br><br>
 This project is deployed on [GitHub Pages](https://vempr.github.io/crypto-app/).
-Simply navigate to the provided link to start the app.
+Simply navigate to the link to start using the app.
 
 ## Dependencies
 
