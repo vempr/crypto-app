@@ -4,13 +4,14 @@
 I've incorporated advanced features to provide more information and a better user experience.
 <br><br>
 This project is deployed on [GitHub Pages](https://vempr.github.io/crypto-app/).
-Simply navigate to the provided link to start the app.
+Simply navigate to the link to start using the app.
 
 ## Dependencies
 
 - **Development**: React.js, TypeScript, Vite
 - **Routing**: React Router DOM
-- **State Management**: RTK Query, Redux Toolkit
+- **State Management**: Redux Toolkit
+-  **Data Fetching**: RTK Query
 - **UI**: Tailwind CSS, Chart.js, FontAwesome Icons
 
 ## APIs
