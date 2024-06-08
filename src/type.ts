@@ -122,17 +122,18 @@ export type ExchangeResponse = Exchange[];
 //
 
 export interface News {
-    description: string;
-    hostname: string;
-    icon: string;
-    rawDescription: string;
     title: string;
     url: string;
+    excerpt: string;
+    thumbnail: string;
+    publisher: {
+        name: string;
+        favicon: string | undefined;
+    }
 }
 
 export interface NewsData {
-    status: number;
-    message: string;
+    success: string;
     data: News[];
 }
 

@@ -14,7 +14,7 @@ import { News, Page } from "../../type.ts";
 export default function LatestNews({ page }: Page) {
     const dispatch = useDispatch<AppDispatch>();
     const newsData = useSelector((state: RootState) => state.app.news);
-    const { data, isLoading, error, refetch } = useGetNewsDataQuery(undefined);
+    const { data, isLoading, error, refetch } = useGetNewsDataQuery();
 
     useEffect(() => {
         if (data) {
