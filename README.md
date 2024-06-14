@@ -1,4 +1,4 @@
-# Cryptocurrency App
+# crypto-app
 
 **crypto-app** is a remake of my older cryptocurrency app, which I had built around a month ago.
 I've incorporated advanced features to provide more information and a better user experience.
